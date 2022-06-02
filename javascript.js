@@ -10,7 +10,7 @@ function computerPlay() {
    } else {
        computerHand = "scissors";
    }
-   console.log(computerHand);
+   console.log("computer plays " + computerHand);
    return computerSelection;
 }
 
@@ -24,15 +24,14 @@ function playerPlay() {
        } else {
            playerHand = "scissors";
        }
-       console.log(playerHand);
+       console.log("Player plays " + playerHand);
     return playerSelection;
 }
 
 
 function playRound() {
     let result = playerPlay() - computerPlay();
-    
-    console.log(result);
+    //console.log(result);
     if (result == 0) {
         console.log("its a tie");
         return 0;
@@ -46,11 +45,20 @@ function playRound() {
 }
 
 function game(rounds=5) {
+    let playerWins = 0, computerWins = 0, tie = 0, winner = 0;
     for (let i = 0; i < rounds; i++) {
-        let wins = 0;
-        wins = wins + playRound();
+        console.log("-----------Round " + (i +1) + " -----------")
+        winner = playRound();
+        if (winner == 0) {
+            tie++;
+        } else if (winner == 1) {
+            playerWins++;
+        } else {
+            computerWins++;
+        }
 
     }
+    console.log("game over!\n scores:\n player: " + playerWins + "\n Computer: " + computerWins + "\n Ties: " + tie)
 }
 
 
