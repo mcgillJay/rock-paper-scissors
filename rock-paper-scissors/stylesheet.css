@@ -1,0 +1,48 @@
+#playField {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#picField {
+    display: flex;
+    align-items: space-between;
+    border-width: 6px;
+    border-radius: 12px;
+    border-color: rgb(143, 19, 19);
+    padding: 100px;
+    background-image: url(./images/picfieldbackground.jpeg);
+    background-size: 650px 425px;
+}
+
+#computerImage {
+    height: 225px;
+    width: 225px;
+}
+
+#playerImage {
+    height: 225px;
+    width: 225px;
+}
+
+#buttonField {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    border-radius: 12px;
+    transition-duration: 0.4s;
+    padding: 32px;
+    font-size: 24px;
+    margin: 10px;
+}
+
+.btn:hover {
+  background-color: white; /* Green */
+  color: grey;
+}
+
