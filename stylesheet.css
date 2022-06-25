@@ -1,0 +1,83 @@
+
+#header {
+    display: flex;
+}
+
+.headerbtn {
+    border-radius: 12px;
+    transition-duration: 0.4s;
+    padding: 20px;
+    font-size: 12px;
+    margin: 5px;
+}
+
+.player1Name {
+    visibility: visible;
+}
+
+.player2Name {
+    visibility: var(--hidden);
+}
+
+#playField {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#picField {
+    display: flex;
+    align-items: space-evenly;
+    border-width: 6px;
+    border-radius: 12px;
+    border-color: rgb(143, 19, 19);
+    padding: 100px;
+    background-image: url(./images/picfieldbackground.jpeg);
+    background-size: 1000px 600px;
+}
+
+#player2Image {
+    height: 225px;
+    width: 225px;
+}
+
+#player1Image {
+    height: 225px;
+    width: 225px;
+}
+
+#playerInput {
+    display: flex;
+    flex-flow:row nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#buttonField1 {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#buttonField2 {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    border-radius: 12px;
+    transition-duration: 0.4s;
+    padding: 32px;
+    font-size: 24px;
+    margin: 10px;
+}
+
+.btn:hover {
+  background-color: white; /* Green */
+  color: grey;
+}
+

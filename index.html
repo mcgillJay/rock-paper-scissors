@@ -5,9 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="javascript.js"></script>
+    <script src="javascript.js" defer></script>
+    <link rel="stylesheet" href="stylesheet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 <body>
+    
+    <div id="container">
+        <div id="header">
+            <div id="'leftheader">
+            <button id="oneplayer" class="headerbtn">1 player mode</button>
+            <button id="twoplayer" class="headerbtn">2 player mode</button>
+        </div>
+        <div id="playerName">
+            <label for="player1Name">Player 1 Name:</label>
+            <input type="text" class="player1Name" value="Matt">
+            <label for="player2Name" class='player2Name'>Player 2 Name:</label>
+            <input type="text" class="player2Name" value="Dalton">
+        </div>
+        </div>
+        <div id="playField">
+            <div id="picField">
+                <img id='player1Image' src="./images/rock/rocklose.jpeg" alt="">
+                <img id='player2Image' src="./images/scissor/scissorwin.jpeg" alt="">
+            </div>
+
+        </div>
+    <div id='playerInput'>
+        <div id="buttonField1">
+            <button class ='playBtn1 btn' id="rock">Rock</button>
+            <button class ='playBtn1 btn' id="paper">Paper</button>
+            <button class ='playBtn1 btn' id="scissors">Scissors</button>
+        </div>
+
+        <div id="buttonField2">
+            <button class ='playBtn2 btn' id="rock">Rock</button>
+            <button class ='playBtn2 btn' id="paper">Paper</button>
+            <button class ='playBtn2 btn' id="scissors">Scissors</button>
+        </div>
+    </div>
+
+    </div>
     
 </body>
 </html>
